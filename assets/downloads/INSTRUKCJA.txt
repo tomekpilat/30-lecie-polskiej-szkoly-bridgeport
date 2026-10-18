@@ -14,23 +14,17 @@ Zawartość:
 - każdy szablon jest dostępny jako PDF, JPG 300 DPI oraz SVG
 
 Formaty plików:
-- PDF - wymagany format końcowy do druku; eksport w najwyższej jakości
-- JPG - pomocniczy szablon 300 DPI; przed drukiem musi zostać umieszczony
-  lub przekonwertowany do PDF
+- JPG - format preferowany; dokładny rozmiar w pikselach, 300 DPI i najwyższa jakość
+- PDF - akceptowana alternatywa, szczególnie dla projektów z tekstem i logo
 
 Wymagania wspólne:
 - obrazy 300 DPI (minimum 200 DPI)
-- w PDF: wszystkie fonty i obrazy muszą być prawidłowo zawarte; warstwy należy spłaszczyć
 - JPG nie może być zrzutem ekranu ani powiększoną grafiką niskiej rozdzielczości
 - jeśli tło pełnej strony dochodzi do krawędzi, trzeba dodać spad 0,25 cala
   na każdej stronie; bez pełnego spadu strona pozostaje w rozmiarze 8,5 x 11 cala
 - tekst, logo i ważne części zdjęć pozostają w strefie bezpiecznej: minimum 0,375 cala od linii cięcia, zalecane 0,5-0,75 cala i dodatkowe 0,25 cala od strony oprawy
 
-Do organizatora najlepiej dostarczyć gotowy PDF. Jeśli organizator zgodzi się przyjąć JPG,
-redakcja musi umieścić go w dokumencie. UBuildABook wymaga, aby zawartość całej książki
-została przekazana jako jeden plik PDF z zachowaniem prawidłowej kolejności stron.
+Do organizatora najlepiej dostarczyć gotowy JPG. Ten format można łatwo wykorzystać
+w publikacji, galerii internetowej lub na stronie szkoły. PDF również jest akceptowany.
 
-Wytyczne strony książki: https://www.ubuildabook.com/book-layout.html
-Tworzenie pliku PDF: https://www.ubuildabook.com/create-pdf.html
-
-Uwaga: UBuildABook określa wymagania strony książki, ale nie narzuca rozmiarów wpisów jubileuszowych. Mniejsze rozmiary są propozycją organizatora dla publikacji 8,5 x 11 cala.
+Uwaga: Mniejsze rozmiary są propozycją organizatora dla publikacji 8,5 x 11 cala.
