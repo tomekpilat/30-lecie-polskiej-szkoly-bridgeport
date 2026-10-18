@@ -5,9 +5,9 @@ FORMAT PUBLIKACJI: 8,5 x 11 CALI
 Rodzice, absolwenci i przyjaciele szkoły mogą przygotować życzenia jubileuszowe, zdjęcia, wspomnienia, podziękowania albo reklamę firmy wspierającej jubileusz.
 
 Zawartość:
-- pełna strona: 8,5 x 11 cala (2550 x 3300 px przy 300 DPI)
-  Jeśli zdjęcie lub tło dochodzi do krawędzi, przygotuj opcjonalny spad 0,25 cala
-  na każdej stronie; plik ze spadem ma wtedy 9 x 11,5 cala.
+- pełna strona bez spadu: 8,5 x 11 cala (2550 x 3300 px przy 300 DPI)
+- pełna strona ze spadem: 9 x 11,5 cala (2700 x 3450 px przy 300 DPI)
+  Ten wariant wybierz, jeśli zdjęcie lub tło dochodzi do krawędzi strony.
 - pół strony: 7,25 x 4,75 cala, poziomo
 - ćwierć strony: 3,5 x 4,75 cala, pionowo
 - wizytówka: 3,5 x 2 cala, poziomo
@@ -26,5 +26,9 @@ Wymagania wspólne:
 
 Do organizatora najlepiej dostarczyć gotowy JPG. Ten format można łatwo wykorzystać
 w publikacji, galerii internetowej lub na stronie szkoły. PDF również jest akceptowany.
+
+POMOC
+Jeśli masz pytania dotyczące wyboru rozmiaru lub przygotowania pliku,
+skontaktuj się z Izą z zarządu Polskiej Szkoły.
 
 Uwaga: Mniejsze rozmiary są propozycją organizatora dla publikacji 8,5 x 11 cala.
