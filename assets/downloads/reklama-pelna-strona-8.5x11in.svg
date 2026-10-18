@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8.5in" height="11.0in" viewBox="0 0 816.0 1056.0">
+  <title>Szablon reklamy - PEŁNA STRONA</title>
+  <style>.head{font:700 24px Arial,sans-serif;fill:#102d3f}.sub{font:400 13px Arial,sans-serif;fill:#d64f3f}.label{font:700 14px Arial,sans-serif;fill:#102d3f}.small{font:400 11px Arial,sans-serif;fill:#6c848f}.tiny{font:700 9px Arial,sans-serif;fill:#6c848f}.red{fill:#d64f3f}</style>
+  <rect width="816.0" height="1056.0" fill="#fffdf8" stroke="#d64f3f" stroke-width="4"/>
+  <rect x="36" y="36" width="744.0" height="984.0" fill="#dce9dc" stroke="#5a9a76" stroke-width="2" stroke-dasharray="5 5"/>
+  <text x="50%" y="52%" text-anchor="middle" class="label">MINIMALNA STREFA BEZPIECZNA 7,75 x 10,25 cala</text>
+  <text x="50%" y="55%" text-anchor="middle" class="small">Tekst, logo i ważne elementy umieść w tym polu</text>
+  <text x="50%" y="48" text-anchor="middle" class="head">PEŁNA STRONA</text>
+  <text x="50%" y="70" text-anchor="middle" class="sub">8.5 x 11 cala | format strony</text>
+  <text x="50%" y="1040.0" text-anchor="middle" class="tiny">2550 x 3300 px przy 300 DPI</text>
+</svg>

@@ -25,13 +25,13 @@ PT = 72
 
 SPECS = [
     {
-        "slug": "reklama-pelna-strona-9x11.5in",
+        "slug": "reklama-pelna-strona-8.5x11in",
         "title": "PEŁNA STRONA",
-        "subtitle": "plik ze spadem",
-        "w": 9.0,
-        "h": 11.5,
-        "pixels": "2700 x 3450 px przy 300 DPI",
-        "full": True,
+        "subtitle": "format strony",
+        "w": 8.5,
+        "h": 11.0,
+        "pixels": "2550 x 3300 px przy 300 DPI",
+        "full_page": True,
     },
     {
         "slug": "reklama-pol-strony-7.25x4.75in",
@@ -40,7 +40,7 @@ SPECS = [
         "w": 7.25,
         "h": 4.75,
         "pixels": "2175 x 1425 px przy 300 DPI",
-        "full": False,
+        "full_page": False,
     },
     {
         "slug": "reklama-cwierc-strony-3.5x4.75in",
@@ -49,7 +49,7 @@ SPECS = [
         "w": 3.5,
         "h": 4.75,
         "pixels": "1050 x 1425 px przy 300 DPI",
-        "full": False,
+        "full_page": False,
     },
     {
         "slug": "reklama-wizytowka-3.5x2in",
@@ -58,7 +58,7 @@ SPECS = [
         "w": 3.5,
         "h": 2.0,
         "pixels": "1050 x 600 px przy 300 DPI",
-        "full": False,
+        "full_page": False,
     },
 ]
 
@@ -79,24 +79,17 @@ def make_pdf(spec):
     c.setFillColor(CREAM)
     c.rect(0, 0, w, h, fill=1, stroke=0)
 
-    if spec["full"]:
-        c.setFillColor(HexColor("#f3b2aa"))
-        c.rect(0, 0, w, h, fill=1, stroke=0)
+    if spec["full_page"]:
         c.setFillColor(HexColor("#fffdf8"))
-        c.rect(0.25 * PT, 0.25 * PT, 8.5 * PT, 11 * PT, fill=1, stroke=0)
-        c.setStrokeColor(INK)
-        c.setDash(6, 4)
-        c.setLineWidth(1.4)
-        c.rect(0.25 * PT, 0.25 * PT, 8.5 * PT, 11 * PT, fill=0, stroke=1)
+        c.rect(0, 0, w, h, fill=1, stroke=0)
         c.setFillColor(MINT)
         c.setStrokeColor(HexColor("#5a9a76"))
         c.setDash(3, 3)
-        c.rect(0.625 * PT, 0.625 * PT, 7.75 * PT, 10.25 * PT, fill=1, stroke=1)
+        c.rect(0.375 * PT, 0.375 * PT, 7.75 * PT, 10.25 * PT, fill=1, stroke=1)
         c.setDash()
         center_text(c, "MINIMALNA STREFA BEZPIECZNA 7,75 x 10,25 cala", h / 2 - 15, 11)
         center_text(c, "Tekst, logo i ważne elementy umieść w tym polu", h / 2 - 34, 8.5, "GuideRegular", GRAY)
-        center_text(c, "LINIA CIĘCIA: 8,5 x 11 cala", h - 0.42 * PT, 6.5, "GuideBold", INK)
-        center_text(c, "SPAD 0,25 cala - tło projektu powinno dochodzić do krawędzi pliku", 0.105 * PT, 6.8, "GuideBold", BRICK)
+        center_text(c, "FORMAT STRONY: 8,5 x 11 cala", h - 0.18 * PT, 6.5, "GuideBold", INK)
     else:
         inset = min(0.25 * PT, w * 0.09, h * 0.16)
         c.setFillColor(HexColor("#fffdf8"))
@@ -112,7 +105,7 @@ def make_pdf(spec):
         center_text(c, "TEKST I LOGO W TYM POLU", h / 2 - 3, min(10, max(6, w / 42)))
         center_text(c, "zalecany odstęp 0,25 cala", h / 2 - 20, min(8, max(5, w / 55)), "GuideRegular", GRAY)
 
-    if spec["full"]:
+    if spec["full_page"]:
         title_y = h - 0.84 * PT
         subtitle_y = h - 1.08 * PT
         pixels_y = 0.32 * PT
@@ -134,13 +127,11 @@ def make_svg(spec):
     title = escape(spec["title"])
     subtitle = escape(f'{spec["w"]:g} x {spec["h"]:g} cala | {spec["subtitle"]}')
     pixels = escape(spec["pixels"])
-    if spec["full"]:
-        guides = f'''<rect width="{w}" height="{h}" fill="#f3b2aa"/>
-  <rect x="24" y="24" width="{8.5*scale}" height="{11*scale}" fill="#fffdf8" stroke="#102d3f" stroke-width="2" stroke-dasharray="8 6"/>
-  <rect x="60" y="60" width="{7.75*scale}" height="{10.25*scale}" fill="#dce9dc" stroke="#5a9a76" stroke-width="2" stroke-dasharray="5 5"/>
+    if spec["full_page"]:
+        guides = f'''<rect width="{w}" height="{h}" fill="#fffdf8" stroke="#d64f3f" stroke-width="4"/>
+  <rect x="36" y="36" width="{7.75*scale}" height="{10.25*scale}" fill="#dce9dc" stroke="#5a9a76" stroke-width="2" stroke-dasharray="5 5"/>
   <text x="50%" y="52%" text-anchor="middle" class="label">MINIMALNA STREFA BEZPIECZNA 7,75 x 10,25 cala</text>
-  <text x="50%" y="55%" text-anchor="middle" class="small">Tekst, logo i ważne elementy umieść w tym polu</text>
-  <text x="50%" y="98.5%" text-anchor="middle" class="tiny red">SPAD 0,25 cala - tło dochodzi do krawędzi pliku</text>'''
+  <text x="50%" y="55%" text-anchor="middle" class="small">Tekst, logo i ważne elementy umieść w tym polu</text>'''
     else:
         inset = min(24, w * 0.09, h * 0.16)
         guides = f'''<rect width="{w}" height="{h}" fill="#fffdf8" stroke="#d64f3f" stroke-width="4"/>
