@@ -90,6 +90,8 @@ h2 { max-width: 650px; margin-bottom: 0; font-size: clamp(40px, 5.6vw, 72px); fo
 .rule-list li { display: grid; grid-template-columns: 70px 1fr; padding: 23px 0; border-bottom: 1px solid var(--line); }
 .rule-list span { padding-top: 3px; color: var(--muted); font-size: 11px; font-weight: 750; }
 .rule-list p { margin: 0; font-size: clamp(18px, 2.5vw, 30px); letter-spacing: -.02em; }
+.print-note { max-width: 820px; margin: 38px 0 0 70px; color: var(--muted); font-size: 14px; }
+.print-note strong { color: var(--ink); }
 .file-note { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: end; margin-top: 70px; padding: 34px; background: var(--accent); color: var(--accent-ink); }
 .file-note .eyebrow { color: var(--accent-ink); opacity: .76; }
 .filename { margin: 0; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; overflow-wrap: anywhere; }
@@ -103,6 +105,7 @@ h2 { max-width: 650px; margin-bottom: 0; font-size: clamp(40px, 5.6vw, 72px); fo
 footer { display: flex; justify-content: space-between; gap: 30px; padding: 34px 0 46px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
 footer p { margin: 0; }
 footer a { text-underline-offset: 4px; }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 18px; }
 
 @media (max-width: 860px) {
   .format-item { grid-template-columns: 34px 120px 1fr; }
@@ -138,6 +141,7 @@ footer a { text-underline-offset: 4px; }
   .downloads { grid-column: 2 / -1; width: 100%; margin-top: 4px; }
   .rules { padding: 100px 0 80px; }
   .rule-list li { grid-template-columns: 44px 1fr; }
+  .print-note { margin-left: 44px; }
   .file-note { grid-template-columns: 1fr; gap: 24px; margin-top: 50px; padding: 24px; }
   .all-files, footer { align-items: flex-start; flex-direction: column; gap: 12px; }
 }

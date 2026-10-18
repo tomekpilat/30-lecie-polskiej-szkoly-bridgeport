@@ -13,19 +13,24 @@ Zawartość:
 - wizytówka: 3,5 x 2 cala, poziomo
 - każdy szablon jest dostępny jako PDF, JPG 300 DPI oraz SVG
 
-Akceptowane zgłoszenia:
-- PDF - format zalecany, szczególnie dla tekstu i logo
-- JPG - dokładny rozmiar w pikselach, 300 DPI, jakość 90-100%, profil sRGB
+Formaty plików:
+- PDF - wymagany format końcowy do druku; eksport w najwyższej jakości
+- JPG - pomocniczy szablon 300 DPI; przed drukiem musi zostać umieszczony
+  lub przekonwertowany do PDF
 
 Wymagania wspólne:
 - obrazy 300 DPI (minimum 200 DPI)
-- w PDF: osadzone fonty, spłaszczone warstwy i brak znaczników drukarskich
+- w PDF: wszystkie fonty i obrazy muszą być prawidłowo zawarte; warstwy należy spłaszczyć
 - JPG nie może być zrzutem ekranu ani powiększoną grafiką niskiej rozdzielczości
-- w pełnej stronie tło dochodzi do krawędzi spadu
+- jeśli tło pełnej strony dochodzi do krawędzi, trzeba dodać spad 0,25 cala
+  na każdej stronie; bez pełnego spadu strona pozostaje w rozmiarze 8,5 x 11 cala
 - tekst, logo i ważne części zdjęć pozostają w strefie bezpiecznej: minimum 0,375 cala od linii cięcia, zalecane 0,5-0,75 cala i dodatkowe 0,25 cala od strony oprawy
 
-Materiał można dostarczyć jako PDF albo JPG. Redakcja umieszcza go w publikacji jubileuszowej, a cała książka jest przekazywana drukarni jako PDF.
+Do organizatora najlepiej dostarczyć gotowy PDF. Jeśli organizator zgodzi się przyjąć JPG,
+redakcja musi umieścić go w dokumencie. UBuildABook wymaga, aby zawartość całej książki
+została przekazana jako jeden plik PDF z zachowaniem prawidłowej kolejności stron.
 
 Wytyczne strony książki: https://www.ubuildabook.com/book-layout.html
+Tworzenie pliku PDF: https://www.ubuildabook.com/create-pdf.html
 
 Uwaga: UBuildABook określa wymagania strony książki, ale nie narzuca rozmiarów wpisów jubileuszowych. Mniejsze rozmiary są propozycją organizatora dla publikacji 8,5 x 11 cala.
