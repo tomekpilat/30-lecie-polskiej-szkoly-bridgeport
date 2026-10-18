@@ -38,7 +38,7 @@ footer { width: min(1180px, calc(100% - 64px)); margin-inline: auto; }
   gap: 24px;
   border-bottom: 1px solid var(--line);
 }
-.wordmark { display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 750; text-decoration: none; }
+.wordmark { min-height: 44px; display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 750; text-decoration: none; }
 .wordmark span { padding: 5px 9px; border-radius: 999px; background: var(--accent); color: var(--accent-ink); font-size: 11px; text-transform: uppercase; }
 .header-link { color: var(--muted); font-size: 13px; font-weight: 650; text-underline-offset: 5px; }
 
@@ -47,7 +47,7 @@ footer { width: min(1180px, calc(100% - 64px)); margin-inline: auto; }
 h1, h2, h3, p { margin-top: 0; }
 h1 { max-width: 980px; margin-bottom: 30px; font-size: clamp(52px, 8.5vw, 112px); font-weight: 650; line-height: .94; letter-spacing: -.07em; }
 .hero-copy { max-width: 650px; margin-bottom: 30px; color: var(--muted); font-size: clamp(17px, 2vw, 21px); }
-.text-link { width: fit-content; padding-bottom: 3px; border-bottom: 1px solid var(--ink); font-size: 14px; font-weight: 750; text-decoration: none; }
+.text-link { width: fit-content; min-height: 44px; display: inline-flex; align-items: center; padding-top: 3px; border-bottom: 1px solid var(--ink); font-size: 14px; font-weight: 750; text-decoration: none; }
 .text-link span { margin-left: 8px; }
 
 .formats { padding: 120px 0 50px; border-top: 1px solid var(--line); }
@@ -82,7 +82,7 @@ h2 { max-width: 650px; margin-bottom: 0; font-size: clamp(40px, 5.6vw, 72px); fo
 .download-primary:hover { background: #34372f; }
 .download-secondary { border: 1px solid var(--ink); background: var(--white); }
 .download-secondary:hover { background: var(--accent); }
-.downloads .source-link { min-height: auto; grid-column: 1 / -1; justify-content: flex-start; padding: 5px 0; color: var(--muted); font-size: 11px; font-weight: 650; text-decoration: underline; text-underline-offset: 4px; }
+.downloads .source-link { min-height: 44px; grid-column: 1 / -1; justify-content: flex-start; padding: 5px 0; color: var(--muted); font-size: 11px; font-weight: 650; text-decoration: underline; text-underline-offset: 4px; }
 
 .rules { padding: 140px 0 110px; }
 .rules .section-intro { grid-template-columns: 1fr; }
@@ -99,13 +99,14 @@ h2 { max-width: 650px; margin-bottom: 0; font-size: clamp(40px, 5.6vw, 72px); fo
 
 .all-files { display: flex; justify-content: space-between; align-items: center; gap: 30px; padding: 32px 0; border-top: 1px solid var(--line); }
 .all-files p { margin: 0; color: var(--muted); font-size: 13px; }
-.all-files a { font-size: 13px; font-weight: 750; text-underline-offset: 5px; }
+.all-files a { min-height: 44px; display: inline-flex; align-items: center; font-size: 13px; font-weight: 750; text-underline-offset: 5px; }
 .all-files a span { margin-left: 6px; }
 
 footer { display: flex; justify-content: space-between; gap: 30px; padding: 34px 0 46px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
 footer p { margin: 0; }
 footer a { text-underline-offset: 4px; }
-.footer-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 18px; }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px 18px; }
+.footer-links a { min-height: 44px; display: inline-flex; align-items: center; }
 
 @media (max-width: 860px) {
   .format-item { grid-template-columns: 34px 120px 1fr; }
