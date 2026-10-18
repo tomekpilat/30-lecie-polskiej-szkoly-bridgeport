@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9.0in" height="11.5in" viewBox="0 0 864.0 1104.0">
+  <title>Szablon reklamy - PEŁNA STRONA</title>
+  <style>.head{font:700 24px Arial,sans-serif;fill:#102d3f}.sub{font:400 13px Arial,sans-serif;fill:#d64f3f}.label{font:700 14px Arial,sans-serif;fill:#102d3f}.small{font:400 11px Arial,sans-serif;fill:#6c848f}.tiny{font:700 9px Arial,sans-serif;fill:#6c848f}.red{fill:#d64f3f}</style>
+  <rect width="864.0" height="1104.0" fill="#f3b2aa"/>
+  <rect x="24" y="24" width="816.0" height="1056" fill="#fffdf8" stroke="#102d3f" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="60" y="60" width="744.0" height="984.0" fill="#dce9dc" stroke="#5a9a76" stroke-width="2" stroke-dasharray="5 5"/>
+  <text x="50%" y="52%" text-anchor="middle" class="label">MINIMALNA STREFA BEZPIECZNA 7,75 x 10,25 cala</text>
+  <text x="50%" y="55%" text-anchor="middle" class="small">Tekst, logo i ważne elementy umieść w tym polu</text>
+  <text x="50%" y="98.5%" text-anchor="middle" class="tiny red">SPAD 0,25 cala - tło dochodzi do krawędzi pliku</text>
+  <text x="50%" y="48" text-anchor="middle" class="head">PEŁNA STRONA</text>
+  <text x="50%" y="70" text-anchor="middle" class="sub">9 x 11.5 cala | plik ze spadem</text>
+  <text x="50%" y="1088.0" text-anchor="middle" class="tiny">2700 x 3450 px przy 300 DPI</text>
+</svg>

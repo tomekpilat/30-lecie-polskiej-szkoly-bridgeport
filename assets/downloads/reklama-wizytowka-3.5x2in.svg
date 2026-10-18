@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3.5in" height="2.0in" viewBox="0 0 336.0 192.0">
+  <title>Szablon reklamy - FORMAT WIZYTÓWKI</title>
+  <style>.head{font:700 18.666666666666668px Arial,sans-serif;fill:#102d3f}.sub{font:400 10.5px Arial,sans-serif;fill:#d64f3f}.label{font:700 12.0px Arial,sans-serif;fill:#102d3f}.small{font:400 8.842105263157896px Arial,sans-serif;fill:#6c848f}.tiny{font:700 6.109090909090909px Arial,sans-serif;fill:#6c848f}.red{fill:#d64f3f}</style>
+  <rect width="336.0" height="192.0" fill="#fffdf8" stroke="#d64f3f" stroke-width="4"/>
+  <rect x="24" y="24" width="288.0" height="144.0" fill="#dce9dc" stroke="#5a9a76" stroke-width="2" stroke-dasharray="5 5"/>
+  <text x="50%" y="52%" text-anchor="middle" class="label">TEKST I LOGO W TYM POLU</text>
+  <text x="50%" y="60%" text-anchor="middle" class="small">zalecany odstęp 0,25 cala</text>
+  <text x="50%" y="36.480000000000004" text-anchor="middle" class="head">FORMAT WIZYTÓWKI</text>
+  <text x="50%" y="57.599999999999994" text-anchor="middle" class="sub">3.5 x 2 cala | orientacja pozioma</text>
+  <text x="50%" y="176.64" text-anchor="middle" class="tiny">1050 x 600 px przy 300 DPI</text>
+</svg>
